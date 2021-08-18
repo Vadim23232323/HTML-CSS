@@ -1,0 +1,64 @@
+body {
+
+    margin: 0;
+    background: url("../img/pattern.png");
+    font-family: Tahoma;
+    line-height: 1.5;
+    font-size: 18px;
+
+}
+
+.card {
+
+ width: 400px;
+ margin: 30px auto;
+    padding: 20px;
+ background-color:#fff;
+ box-shadow: 0 5px 10px #ccc;
+ border-radius: 10px;
+
+}
+
+.card-avatar {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0px auto;
+    border-radius: 50%;
+}
+
+.card-title {
+    font-size: 20px;
+    text-align: center;
+    color: #363232;
+
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.card-subtitle {
+    font-size: 20px;
+    margin: 5px auto;
+    color: #093290;
+}
+
+p {
+    font-family: Arial;
+    font-size: 18px;
+    color: #262620;
+    margin: 0;
+}
+
+.card-list {
+    font-size: 18px;
+    padding-left: 0;
+    list-style-position: inside;
+
+}
+a {
+    color: #4da733;
+    font-style: arial;
+    font-weight: bold;
+}
