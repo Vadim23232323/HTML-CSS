@@ -2,68 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>My first website</title>
 </head>
 <body>
-    <h1>Business WEBSITE</h1>
-    <h2>StartUp</h2>
-  <!--   <ol>
-        <li>Business WEBSITE</li>
-        <li>StartUp</li>
-        <span>End business</span>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-            </ul>
-    </ol> -->
-
-    <p>Lorem ipsum dolor sit amet consectetur <a href="http://htmlbook.ru/html/img">link</a> adipisicing elit. 
-    Provident quidem ab labore, ut veniam eligendi dolores beatae 
-    optio similique nam! Voluptatibus architecto velit praesentium 
-    explicabo earum distinctio veniam fugit vel? Lorem ipsum, 
-    dolor sit amet consectetur adipisicing elit. Nam, odit. 
-    Pariatur neque ullam dolor doloribus vero, 
-    veritatis nihil repellat nemo quam est, 
-    molestiae provident ipsum, labore dicta molestias eveniet voluptas.</p>
-   <!--  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut nemo amet obcaecati atque officia vel, unde officiis ipsam dolor ex quis odio. Eaque quae voluptates voluptatibus aliquam earum rem.</p> 
-    <h2>section 2</h2>    
-    <img src="http://img2.joyreactor.cc/pics/post/full/anon-%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0-2191131.jpeg" alt="my image">   
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea molestias, optio soluta commodi tenetur temporibus consectetur reprehenderit fugit aliquid libero voluptatibus dolorem ipsum doloribus iusto neque ullam saepe. Sint, consectetur.</p>  
-    <h3>section 3</h3>
-   
-    <table>
-    <tr>
-        <th>Informations</th>
-        <th>variable</th>
-        <th>Value</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-    </tr>
-</table> -->
-<form action="#">
-    <fieldset name="Form">
-        <Legend>Форма связи</Legend>
-          <label for="name">Name</label>
-        <input name="name" type="text" placeholder="name">
-    <label for="Email">Email</label>   
-        <input name="Email" type="Email" placeholder="Email">
-        <label>Отправить ответ на Email<input type="checkbox"></label>
-        <br>
-        <textarea cols="55" rows="10"></textarea>
-        <br>
-        <input type="submit"> 
-    </fieldset>
- <a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam culpa non fugit. Ex veritatis dolorum repellat architecto at ipsum perspiciatis consequatur, inventore laborum deleniti. Impedit sapiente autem ducimus minima quisquam.</p></a>
-</form>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <div class="logo__img">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="newspaper" class="svg-inline--fa fa-newspaper fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M552 64H88c-13.255 0-24 10.745-24 24v8H24c-13.255 0-24 10.745-24 24v272c0 30.928 25.072 56 56 56h472c26.51 0 48-21.49 48-48V88c0-13.255-10.745-24-24-24zM56 400a8 8 0 0 1-8-8V144h16v248a8 8 0 0 1-8 8zm236-16H140c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm208 0H348c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm-208-96H140c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm208 0H348c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm0-96H140c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h360c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12z"></path></svg>
+                </div>
+                <p class="logo__title">Моя первая статья</p>
+            </a>
+        </div>
+        <nav>
+            <ol class="menu">
+                <li class="menu__item"><a href="#start">Начало истории</a></li>
+                <li class="menu__item"><a href="#">Cередина истории</a></li>
+                <li class="dropdown">
+                    <div class="dropbtn">Конец истории</div> 
+                    <div class="dropdown-content">
+                        <a href="#finish1">Первый раздел</a>
+                        <a href="#finish2">Второй раздел</a>
+                        <a href="#finish3">Третий раздел</a>
+                    </div>
+                </li>
+            </ol>  
+        </nav>
+    </header>
+    <main>
+        <h1 class="article__title">Как создать статью?</h1>
+        <hr>
+        <section class="story" id="start">
+            <h2 class="story__title">Начало истории</h2>
+            <p><span style="color: rgb(255, 136, 0); margin-left: 10px;">Lorem</span> ipsum dolor sit amet, consectetur <a href="https://learn.javascript.ru/regexp-greedy-and-lazy">adipisicing elit</a> . Eveniet nisi corrupti, impedit magni ea quibusdam enim qui officia dolores autem cumque sunt ipsum veniam quidem nihil tempora excepturi fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem fuga modi, corrupti possimus itaque beatae nulla! Impedit, at ad veniam, eligendi, ipsum doloribus praesentium in optio consequuntur molestiae deserunt!</p>
+            <p><span style="margin-left: 10px;">Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nisi corrupti, impedit magni ea quibusdam enim praesentium qui officia dolores autem cumque sunt ipsum veniam quidem nihil tempora excepturi fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem fuga modi, corrupti possimus itaque beatae nulla! Impedit, at ad veniam, eligendi, ipsum doloribus praesentium in optio consequuntur molestiae deserunt!</p>
+            <p><span style="margin-left: 10px;">Lorem</span>, ipsum <a href="https://learn.javascript.ru/regexp-greedy-and-lazy">dolor sit amet consectetur</a> adipisicing elit. Odio assumenda illum corrupti, illo ad, obcaecati cumque suscipit culpa nisi tenetur veritatis eius ratione delectus quidem, beatae cupiditate dolor possimus alias.</p>
+        </section>
+        <section class="story">
+            <h2 class="story__title">Конец истории</h2>
+            <div id="finish1">
+                <h3>Первый раздел</h3>
+                <div class="story__content">
+                    <img src="img/myImage.jpg" alt="my Image">
+                    <p><span style="margin-left: 10px;">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. Sint autem doloremque nulla odio labore ipsa temporibus dolor esse aliquam, distinctio velit, quaerat id eaque? Voluptas natus suscipit modi autem placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos adipisci nostrum doloremque optio! Possimus porro beatae, fuga libero facere harum quis dolor, non et sint consequuntur quaerat quisquam. Dignissimos, eaque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis sit voluptas dicta nemo reprehenderit voluptatem explicabo. Dolorem, nisi atque. Porro reiciendis doloribus consequuntur amet dolores adipisci placeat minima et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sunt voluptatem corporis numquam odio, perspiciatis officiis sed ipsam voluptatum dolor nesciunt molestias? Sunt error esse pariatur cum non aliquid veritatis.</p>
+                </div>
+            </div>
+            <div id="finish2">
+                <h3>Второй раздел</h3>
+                <div class="story__content">
+                    <img src="https://webpromotion-group.com/wp-content/uploads/2017/06/analiticheskaya-statya-dlya-sayta-chto-eto-takoe-osnovnyie-osobennosti.jpg" alt="image">
+                    <p><span style="margin-left: 10px;">Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit. Itaque commodi numquam, unde nam officia porro recusandae, dolores, repellat expedita vel ad dolor omnis fugiat quod reprehenderit optio in? Harum, veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt illum vitae dolores sapiente, doloremque animi sit perferendis rerum. Corrupti minus mollitia expedita explicabo est, autem sequi? Nostrum, doloribus error?</p>
+                </div>
+            </div>
+            <div id="finish3"> 
+                <h3>Третий раздел</h3>
+                <div class="wrapper">
+                    <div>
+                        <table>
+                            <tr>
+                                <th>№ п/п</th>
+                                <th>Информация</th>
+                                <th>Дата создания</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime itaque</td>
+                                <td>1920 г</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Adipisicing elit. Maxime itaque</td>
+                                <td>2010 г</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident dolor, culpa, tenetur</td>
+                                <td>2020 г</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <form action="#">
+                            <fieldset>
+                                <legend>Форма связи</legend>
+                                <label>Имя: <input name="namepass" type="text" placeholder="Имя"></label>
+                                <label>Email: <input type="email" placeholder="Email"></label>
+                                <br>
+                                <textarea class="form__text" cols="40" rows="10"></textarea>
+                                <br>
+                                <label>Отправить ответ на ваш email?<input type="checkbox"></label>
+                                <br>
+                                <input class="form__submit" type="submit">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="#">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae magnam, sit architecto labore molestiae sequi odit, molestias a iste, doloremque at laborum sed commodi autem quo veritatis? Aut, sit.</p>
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
