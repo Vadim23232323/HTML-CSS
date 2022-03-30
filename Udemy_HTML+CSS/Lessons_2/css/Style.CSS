@@ -1,8 +1,23 @@
 
 body {
-    background-color:rgb(233, 124, 81);
+    background-color:rgb(233, 124, 81, 0.5);
 }
 .links_item a {
   color:rgb(105, 109, 109);
   font-size: 40px;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0;
+} 
+.h1 {
+  margin: 0;
+}
+.block {
+width: 100vw;
+background-color: red;
+max-height: 150px;
 }
