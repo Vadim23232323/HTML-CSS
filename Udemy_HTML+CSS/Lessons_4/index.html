@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="cart">
+            <div class="cart__image"><img src="img/strawberry.jpg" alt="strawberry"></div>
+            <div class="cart__content">
+                <div class="cart__title">Клубника</div>
+                <div class="cart__cost">Стоимость <span>500</span> руб</div>
+                <input type="number" class="cart__amount" value="1" min="1" max="100">
+                <input type="submit" class="cart__btn" value="Купить">
+            </div>
+        </div>
+    </div>
+    <script>
+        let amount = document.querySelector('.cart__amount'),
+            cost = document.querySelector('.cart__cost span');
+        amount.addEventListener('input', () => {
+            cost.innerHTML = amount.value * 500;
+        });
+    </script>
+</body>
+</html>
