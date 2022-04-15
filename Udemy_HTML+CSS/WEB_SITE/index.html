@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <section class="promo">
+    <section class="promo" id="home">
         <div class="container">
             <header class="header">
                 <a href="#" class="logo">
@@ -32,11 +32,11 @@
                 </a>
                 <nav class="nav">
                     <ul class="nav_list">
-                        <li class="nav_item"><a href="#">Home</a></li>
-                        <li class="nav_item"><a href="#">Service</a></li>
-                        <li class="nav_item"><a href="#">Extension</a></li>
-                        <li class="nav_item"><a href="#">Picing</a></li>
-                        <li class="nav_item"><a href="#">Help</a></li>
+                        <li class="nav_item"><a href="#home">Home</a></li>
+                        <li class="nav_item"><a href="#service">Service</a></li>
+                        <li class="nav_item"><a href="#useful">Useful</a></li>
+                        <li class="nav_item"><a href="#team">Team</a></li>
+                        <li class="nav_item"><a href="#contact">Help</a></li>
                     </ul>
                 </nav>
                 <div class="promo_sign">
@@ -50,13 +50,13 @@
                         consequuntur ut nostrum soluta illo commodi aut quia sequi quidem et natus incidunt, esse
                         consequatur? Aliquam quo voluptatem deleniti laudantium.</div>
                     <div class="promo_btns">
-                        <button class="promo_btn promo_btn_black">Buy now</button>
-                        <button class="promo_btn promo_btn_white">Try for free</button>
+                        <button class="promo_btn promo_btn_black" id="buyNowBtn">Buy now</button>
+                        <button class="promo_btn promo_btn_white" id="TryForFree">Try for free</button>
                     </div>
                 </div>
                 <div class="promo_video">
-                    <video width="600" height="320" src="video/buisnes.mp4" poster="video/poster.png"></video>
-                    <div class="promo_play">
+                    <video id="video" width="600" height="320" src="video/buisnes.mp4" poster="video/poster.png"></video>
+                    <div class="promo_play" id="playVideo">
                         <div>
                             <i class="fa-solid fa-play"></i>
                         </div>
@@ -66,7 +66,7 @@
             </div>
         </div>
     </section>
-    <section class="useful">
+    <section class="useful" id="useful">
         <div class="container">
             <h2 class="title">
                 Easy & Useful</h2>
@@ -97,7 +97,6 @@
                             ullam. Provident debitis vero cupiditate nihil id eum quam eos atque quaerat, molestiae
                             possimus eveniet unde fuga tenetur, dicta veritatis!</div>
                     </div>
-
                 </div>
                 <div class="useful_item">
                     <div class="useful_icon">
@@ -160,7 +159,7 @@
             </div>
         </div>
     </section>
-    <section class="service">
+    <section class="service" id="service">
         <h2 class="title">Services</h2>
         <div class="descr">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus nulla blanditiis assumenda
             aspernatur similique praesentium perspiciatis sint nisi exercitationem accusantium, totam fugiat esse
@@ -323,7 +322,7 @@
             </div>
         </div>
     </section>
-    <section class="team">
+    <section class="team" id="team">
         <h2 class="title">Our Team</h2>
         <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ut tenetur, provident
             nisi quia, quod modi alias, delectus atque illo culpa veniam. Tenetur voluptate asperiores sed quos eum
@@ -401,7 +400,97 @@
             </div>
         </div>
     </section>
-
+    <section class="contact" id="contact">
+        <h2 class="title">Contact Us</h2>
+        <div class="descr descr_dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, mollitia!
+            Sapiente dignissimos odio error! Delectus, totam? Facere in fuga aut consectetur, doloribus porro fugit,
+            consequuntur est harum vel, veniam quidem?</div>
+        <div class="contact_content">
+            <form action="#" class="form">
+                <div class="form_wrap">
+                    <input type="text" name="Firstname" class="form_inp" placeholder="First Name" required>
+                    <input type="text" name="Lastname" class="form_inp" placeholder="Last Name" required>
+                </div>
+                <div class="form_wrap">
+                    <input type="email" name="Email" class="form_inp" placeholder="Email" required>
+                    <input type="tel" name="tel" class="form_inp" placeholder="Phone">
+                </div>
+                <textarea name="message" class="form_message" placeholder="Message"></textarea>
+                <div class="form_send">
+                    <label for=""><input type="checkbox" name="subs" class="form_subs"> subscibe to twe
+                        newsletter</label>
+                    <input type="submit" class="form_btn" value="send">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrap">
+                <div class="footer_first">
+                    <a href="#" class="logo">
+                        <div class="logo_wrap">
+                            <img src="icons/logo/logo.svg" alt="logo" class="logo_img">
+                            <div class="logo_text">
+                                Dart<br>
+                                <span>
+                                    service manager
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="footer_submenu">
+                        <a href="">Privecy Policy</a>
+                        <div></div>
+                        <a href="">About US</a>
+                        <div></div>
+                        <a href="">About Us</a>
+                    </div>
+                </div>
+                <div class="footer_primary">
+                    <nav class="nav nav_footer">
+                        <ul class="nav_list">
+                            <li class="nav_item"><a href="#home">Home</a></li>
+                            <li class="nav_item"><a href="#service">Service</a></li>
+                            <li class="nav_item"><a href="#useful">Useful</a></li>
+                            <li class="nav_item"><a href="#team">Team</a></li>
+                            <li class="nav_item nav_item_margin-none"><a href="#contact">Help</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer_links">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-vk"></i></a>
+                        <a href="#"><i class="fa-brands fa-behance-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup">
+        <div class="popup_wrap">
+            <div class="popup_form">
+                <form action="#" class="form">
+                    <div class="form_wrap">
+                        <input type="text" name="Firstname" class="form_inp" placeholder="First Name" required>
+                        <input type="text" name="Lastname" class="form_inp" placeholder="Last Name" required>
+                    </div>
+                    <div class="form_wrap">
+                        <input type="email" name="Email" class="form_inp" placeholder="Email" required>
+                        <input type="tel" name="tel" class="form_inp" placeholder="Phone">
+                    </div>
+                    <textarea name="message" class="form_message" placeholder="Message"></textarea>
+                    <div class="form_send">
+                        <label for=""><input type="checkbox" name="subs" class="form_subs"> subscibe to twe
+                            newsletter</label>
+                        <input type="submit" class="form_btn" value="send">
+                    </div>
+                </form>
+                <i class="fa-solid fa-xmark popup_close"></i>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -409,3 +498,5 @@
 </body>
 
 </html>
+
+
